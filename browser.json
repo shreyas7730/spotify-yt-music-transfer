@@ -1,0 +1,17 @@
+{
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate",
+    "accept-language": "en-US,en;q=0.9,gu;q=0.8,hi;q=0.7",
+    "authorization": "SAPISIDHASH 1779690529_0244dad23964297347673d6debc41c8d4d2e2f4d_u SAPISID1PHASH 1779690529_0244dad23964297347673d6debc41c8d4d2e2f4d_u SAPISID3PHASH 1779690529_0244dad23964297347673d6debc41c8d4d2e2f4d_u",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "cookie": "VISITOR_INFO1_LIVE=QRW_0-Syq7w; VISITOR_PRIVACY_METADATA=CgJJThIEGgAgHQ%3D%3D; HSID=AcFinKwNQvpIayn2T; SSID=Au4QoIY7Tvh8IJlxX; APISID=Sq8ss379CARkaHQY/Ao2dTOLI2RY5mQEGw; SAPISID=z036Jmayd8h2aKJu/ADLgFp5QuK4vfcp6c; __Secure-1PAPISID=z036Jmayd8h2aKJu/ADLgFp5QuK4vfcp6c; __Secure-3PAPISID=z036Jmayd8h2aKJu/ADLgFp5QuK4vfcp6c; __Secure-BUCKET=CM0D; SID=g.a0009Qj_iHNzflnMkejOWtK5R5dgUMHXfikG3OEqQpcYCTNv5CFT1asRY9D0C-Xf92J3DD9CkAACgYKAcYSARESFQHGX2Mi6cY_DuVJ1JJCfiktGQcszRoVAUF8yKoNza7IZCbjqHTK_gXheRA60076; __Secure-1PSID=g.a0009Qj_iHNzflnMkejOWtK5R5dgUMHXfikG3OEqQpcYCTNv5CFTT1DkZFJOfkQOP2zsUqcaLAACgYKAWMSARESFQHGX2MiWvcRyBl7G6cwdtCd43NB9xoVAUF8yKotI1S4ndhclhKKAVYlFwmU0076; __Secure-3PSID=g.a0009Qj_iHNzflnMkejOWtK5R5dgUMHXfikG3OEqQpcYCTNv5CFTj6wjWfheyXlJzEgTsNiY8gACgYKAV0SARESFQHGX2MiDhNDiUDyEmh0YH6O_sTvsxoVAUF8yKpvBzZv0LuWyvAbs5v9FuRt0076; __Secure-1PSIDTS=sidts-CjEBhkeRd0iZPM6k17TPze2hVg4M53DBHWyZ-S5d6wdzNWDuwkJK_9jKRkWpvuOABBFkEAA; __Secure-3PSIDTS=sidts-CjEBhkeRd0iZPM6k17TPze2hVg4M53DBHWyZ-S5d6wdzNWDuwkJK_9jKRkWpvuOABBFkEAA; LOGIN_INFO=AFmmF2swRAIgRVvLOykxl83XtRnxYYxCP-S1Pyi16o46PbVyboMp9MMCICv6cnUjr30xZrWf9fxUQlmN49HE2uO_6Z_CWqXQzCm4:QUQ3MjNmeFR5SlJtRWU4QXNOMm1Bay0yOEpKRi1BS1A5Y0hzSkpWcXA2ek1xVHZKQ1pPQVRla0U3Y21UbkJ4dW9IQjI1cHBOc29USktmX296RXdsNWNZOFg3ZlJuU0VtbmI3X1pkdDFFbUZ6aThCVl9pU3RjczVtWWwxc0g0dW15ZWsxdFplYWNmQktkanRab0FIak1aMGpscUxTWnVwZkhB; SIDCC=AKEyXzWaYiPKZF4SbhhygRkUkxzzee7QTKjlj5a0uzD20RYxEcGDFR-mlwhFVPEOW01pF5oOng; __Secure-1PSIDCC=AKEyXzUAd0l-hPO8Vwkxu2JXCWWNsG-FDOpH2Ywt6KvJFN7xFLD9HqcY9cHIksBdekAcV2ed96U; __Secure-3PSIDCC=AKEyXzWqyOlDk99A1mTDQClHz0B1iApdUMGg1s5YibaJnKlGJoFjJfU_YDrB2bmXM6ZrSVA98fM; PREF=f6=40000000&tz=Asia.Calcutta&f7=150&repeat=NONE&f5=30000&guide_collapsed=true&autoplay=true",
+    "origin": "https://music.youtube.com",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0",
+    "x-goog-authuser": "1",
+    "x-goog-visitor-id": "CgtRUldfMC1TeXE3dyig2M_QBjIKCgJJThIEGgAgHWLfAgrcAjE4LllUPW5ORGlfNl8yZEFMR1pXVXJyaTJwb1FrSlRDM0lOUjJTNXhBVW1WUXF4TDdYSFdhc0h1SjRWbTRySkhoQ2RGQy11bXhBLUw1N3BhRG1JQVZVejFVbzhFblMzLTZNWWo1S3NmVXNvY2duaS0xUV9NRWdib2lBRzFfMUltajFYa1RRbGc2TzZISUhjQndYdUdia1RVbjUwcUZJYTNDNUt0eVd6aDFlWFZfSFJLM2Z0b2pWQzd3TWdCT2FZUjhfMjJsYVMwOTVVbjF1TG1nU0ZhcHF2SE9qMHZrd2lhWE5LMDBlVG9hZFoyVy16bGY2SkFuNkljLVJuQlVydGRGSm5lSGo1OEhvem0xSDZibnROMkZzWkcweWxRN2NIam1DbTNpN2tqRlFSMXdxM1Etd1g3SUJpWnd3Q2NGaG5TdGtXMmdYSTZwZzNjYnQwYk93eTlXdVZJbE5LUQ%3D%3D",
+    "x-origin": "https://music.youtube.com",
+    "x-youtube-bootstrap-logged-in": "true",
+    "x-youtube-client-name": "67",
+    "x-youtube-client-version": "1.20260519.01.00"
+}

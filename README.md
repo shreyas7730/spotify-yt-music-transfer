@@ -1,13 +1,13 @@
 ### Overview
 
-This is a set of scripts for copying "liked" songs and playlists from Spotify to YTMusic. It provides a GUI (implemented by Yoween, formerly called spotify_to_ytmusic_gui).
+**SyncWave** is a professional desktop and command-line transfer tool for copying liked songs, albums, and playlists from Spotify to YouTube Music (YTMusic). It features a gorgeous, macOS Sequoia / Vision Pro dark glassmorphism GUI.
 
 ---
 
 ### Preparation/Pre-Conditions
 
 1. **Install Python and Git** (you may already have them installed).
-2. **Uninstall the pip package from the original repository** (if you previously installed `linsomniac/spotify_to_ytmusic`):
+2. **Uninstall any previous versions**:
 
    On Windows:
 
@@ -30,7 +30,7 @@ This is a set of scripts for copying "liked" songs and playlists from Spotify to
 Start by creating and activating a Python virtual environment to isolate dependencies.
 
 ```bash
-git clone https://github.com/linsomniac/spotify_to_ytmusic.git
+git clone https://github.com/syncwave/spotify_to_ytmusic.git
 cd spotify_to_ytmusic
 ```
 

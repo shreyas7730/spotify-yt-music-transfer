@@ -2,7 +2,7 @@
 name = "spotify2ytmusic"
 version = "0.1.0"
 description = "Copy Spotify playlists to YTMusic/YouTube Music"
-authors = ["Sean Reifschneider <jafo00@gmail.com>"]
+authors = ["SyncWave Team"]
 license = "Creative Commons Zero v1.0 Universal"
 readme = "README.md"
 
@@ -28,7 +28,7 @@ s2yt_ytoauth = "spotify2ytmusic.cli:ytoauth"
 
 [tool.briefcase]
 project_name = "Spotify2YTMusic"
-bundle = "com.linsomniac"
+bundle = "com.syncwave"
 version = "0.1"
 license = "CC0-1.0"
 

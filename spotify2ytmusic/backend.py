@@ -19,17 +19,24 @@ def get_ytmusic() -> YTMusic:
     """
     @@@
     """
-    if not os.path.exists("oauth.json"):
-        print("ERROR: No file 'oauth.json' exists in the current directory.")
-        print("       Have you logged in to YTMusic?  Run 'ytmusicapi oauth' to login")
+    if os.path.exists("oauth.json") and not os.path.exists("browser.json"):
+        print("Moving old oauth.json file to browser.json to avoid ytmusicapi naming conflict...")
+        try:
+            os.rename("oauth.json", "browser.json")
+        except Exception as e:
+            print(f"Warning: Could not rename oauth.json to browser.json: {e}")
+
+    if not os.path.exists("browser.json"):
+        print("ERROR: No file 'browser.json' exists in the current directory.")
+        print("       Have you logged in to YTMusic?  Run 'ytmusicapi browser' or use the GUI to login")
         sys.exit(1)
 
     try:
-        return YTMusic("oauth.json")
+        return YTMusic("browser.json")
     except json.decoder.JSONDecodeError as e:
         print(f"ERROR: JSON Decode error while trying start YTMusic: {e}")
-        print("       This typically means a problem with a 'oauth.json' file.")
-        print("       Have you logged in to YTMusic?  Run 'ytmusicapi oauth' to login")
+        print("       This typically means a problem with a 'browser.json' file.")
+        print("       Have you logged in to YTMusic?  Run 'ytmusicapi browser' or use the GUI to login")
         sys.exit(1)
 
 

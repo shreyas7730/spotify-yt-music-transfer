@@ -49,28 +49,35 @@ class SpotifyAPI:
     @staticmethod
     def authorize(client_id, scope):
         """Open a browser for user authorization and return SpotifyAPI instance."""
-        redirect_uri = f"http://127.0.0.1:{SpotifyAPI._SERVER_PORT}/redirect"
-        url = SpotifyAPI._construct_auth_url(client_id, scope, redirect_uri)
-        print(f"Open this link if the browser doesn't open automatically: {url}")
-        webbrowser.open(url)
-
-        server = SpotifyAPI._AuthorizationServer("127.0.0.1", SpotifyAPI._SERVER_PORT)
         try:
-            while True:
-                server.handle_request()
-        except SpotifyAPI._Authorization as auth:
-            return SpotifyAPI(auth.access_token)
+            from spotipy.oauth2 import SpotifyOAuth
+        except ImportError:
+            print("ERROR: 'spotipy' package is required for Spotify authentication.")
+            print("Please run: pip install spotipy")
+            sys.exit(1)
 
-    @staticmethod
-    def _construct_auth_url(client_id, scope, redirect_uri):
-        return "https://accounts.spotify.com/authorize?" + urllib.parse.urlencode(
-            {
-                "response_type": "token",
-                "client_id": client_id,
-                "scope": scope,
-                "redirect_uri": redirect_uri,
-            }
+        # Using working Client ID, Client Secret, and Redirect URI
+        SPOTIPY_CLIENT_ID = 'e25b63369cfa492391c4b983eb6b76df'
+        SPOTIPY_CLIENT_SECRET = '69d7e4ece3214d1d859200944513312d'
+        SPOTIPY_REDIRECT_URI = 'http://127.0.0.1:8888/callback'
+
+        print("Initiating Spotify authentication via spotipy...")
+        sp_oauth = SpotifyOAuth(
+            client_id=SPOTIPY_CLIENT_ID,
+            client_secret=SPOTIPY_CLIENT_SECRET,
+            redirect_uri=SPOTIPY_REDIRECT_URI,
+            scope=scope,
+            cache_path=".cache"
         )
+
+        token_info = sp_oauth.get_cached_token()
+        if not token_info:
+            token_info = sp_oauth.get_access_token(as_dict=True)
+
+        if token_info and "access_token" in token_info:
+            return SpotifyAPI(token_info["access_token"])
+        else:
+            sys.exit("Failed to obtain Spotify access token.")
 
     def _construct_url(self, url, params):
         """Construct a full API URL."""

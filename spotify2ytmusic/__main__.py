@@ -19,7 +19,7 @@ if len(sys.argv) < 2:
 
 if sys.argv[1] not in available_commands:
     print(
-        f"ERROR: Unknown command '{sys.argv[1]}', see https://github.com/linsomniac/spotify_to_ytmusic"
+        f"ERROR: Unknown command '{sys.argv[1]}', see SyncWave documentation or GUI."
     )
     print("Available commands: ", ", ".join(available_commands))
     sys.exit(1)
